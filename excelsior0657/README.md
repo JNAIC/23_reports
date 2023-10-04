@@ -1,7 +1,4 @@
-if school not in "**" {
-
-
+```java
+if school not in "**"{
     return false;
-
-  
 }
