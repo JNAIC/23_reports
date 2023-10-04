@@ -1,1 +1,3 @@
-springTest-->Run
+if school not in "**" {
+  return false;
+}
