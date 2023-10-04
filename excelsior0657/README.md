@@ -1,3 +1,4 @@
-if school not in "**" {
+if school not in "**" 
+{
   return false;
 }
