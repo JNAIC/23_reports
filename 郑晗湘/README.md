@@ -54,23 +54,13 @@ print(list)
     for j in range (1,i+1):
         print(f'{i}*{j}={i*j}',end=" ")
 ```
-4.数学练习
-​```       
-​        for i in range (100,1000) :
-​    a=i%10  #个位#
-​    b=i//100
-​    c=i%100//10
-​    if a**3+b**3+c**3==i :
-​        print(i)
 
-```
 
 
 
 5.
 ```
-   a=int(input('请输入一个四位数'))
-
+a=int(input('请输入一个四位数'))
 b=a//1000
 c=a%1000//100
 d=a%1000%100//10
@@ -80,18 +70,28 @@ s=e*1000+d*100+c*10+b*1
 print(s)
 ```
 
+
 6.求阶乘
 ```
 n=4
-
 sum=1
-
 for i in range (1,i+1) ：
       sum*=i
       print(sum)
 
 
 
+
+4.
+``       
+​    for i in range (100,1000) :
+​    a=i%10  #个位#
+​    b=i//100
+​    c=i%100//10
+​    if a**3+b**3+c**3==i :
+​        print(i)
+
+```
 7.
 ```
 def jiecheng(num) :
@@ -99,6 +99,7 @@ def jiecheng(num) :
        return 1
 else:
         return jiecheng(num-1)*num
+
 ```
 8.求完数
 ```
@@ -110,10 +111,10 @@ else:
 if sum==0
       print(f'{i}')
 ```
-.......
-.字母辨别函数                
+
+9.字母辨别函数                
 a=a.isalpha()辨别字母
-.break的应用
+10.break的应用
 #本周问题
 不熟练导致代码复杂
 注册不了kaggle暂时使用哔哩哔哩题目
