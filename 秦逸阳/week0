@@ -1,0 +1,13 @@
+# week0
+## 本周工作
+1. 帮商学院的hxd使用lda和word2vec进行文本分析[w2v-lda](https://github.com/traecerk/w2v-lda)
+2. 正在跟着d2l搓transformer
+
+## 下周计划
+1. 把d2l上的transformer搓出来
+2. 把heatmap可视化整明白
+3. 帮助hxd完成论文的实验部分
+
+## 总结
+1. 尽管代码的时候copilot用着很爽，但还是感觉不踏实
+
