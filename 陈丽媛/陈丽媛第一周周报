@@ -1,13 +1,13 @@
 #陈丽媛第一周周报
 
 #工作总结
- 学习Kaggle和Pythen
+ 学习Kaggle和Python
 
 #Kaggle
  学习了Pandas
-（但是感觉先搞Pythen的话，这个学起来会快一点）
+（但是感觉先搞Python的话，这个学起来会快一点）
 
-#Pythen
+#Python
 学习了数据与运算
 
 print("Hello World!")
@@ -72,5 +72,9 @@ money=2100
 result=price>1200 and money>price
 print(result)
 
-#Pythen真的零基础，感觉自己学的好慢，以后有空都干Pythen了
+#Python真的零基础，感觉自己学的好慢，以后有空都干Python了
  当然下周也要接着看Kaggle
+
+wine_reviews = pd.read_csv("../input/wine-reviews/winemag-data-130k-v2.csv")
+这个是啥，卡住了，运行不了
+跪求大佬指点
