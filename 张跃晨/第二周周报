@@ -1,0 +1,126 @@
+1.学习了列表，元组，字典的使用
+（因为今晚用anaconda打不开jupyter notebook了，所以记的一些笔记就没办法复制粘贴上来了）
+
+2.学习了python中的类和对象，文件与异常，测试函数的内容（以下就是一些学习过程中为了熟悉操作过程跟着书上敲得代码，算是小小的笔记（节选),可以略过，直接到117行）
+类和对象：
+class Car():
+    #一次关于汽车的模拟
+    def __init__(self,make,model,year):
+        #初始化描述汽车属性
+        self.make=make
+        self.model=model
+        self.year=year
+        self.odometer_reading=0
+
+    def get_description_name(self):
+        #整段的描述信息
+        long_name=str(self.year)+" "+self.make+" "+self.model
+        return long_name.title()
+
+    def read_odometer(self):
+    #打印关于汽车里程的信息
+        print("This car has "+str(self.odometer_reading)+" miles on it.")
+
+    def update_odometer(self,milleage):
+        #将里程表读数设定成指定的值,同事禁止向回调
+        if milleage >=  self.odometer_reading:
+            self.odometer_reading=milleage
+        else:
+            print("You can not roll back an odometer.")
+
+my_new_car=Car("audi","a8",2020)
+
+print(my_new_car.get_description_name())
+
+my_new_car.read_odometer()
+
+my_new_car.update_odometer(23)
+my_new_car.read_odometer()
+
+my_new_car.update_odometer(22)
+my_new_car.read_odometer()
+
+文件和异常：
+filename="programming.txt"
+
+with open(filename,"w") as file_object:
+   file_object.write("I'm programming this after noon,in club.\n")
+    file_object.write("I want to run.")
+
+with open(filename,"a") as file_object:
+    file_object.write("I'm a little hungery.\n")
+
+
+#使用json.dump()
+import json
+
+numbers=[2,4,6,8,10]
+
+filename="numbers.json"
+with open(filename,"w") as f_obj:
+    json.dump(numbers,f_obj)
+
+
+#使用json.load()
+import json
+
+filename="numbers.json"
+with open(filename) as f_obj:
+    numbers=json.load(f_obj)
+
+print(numbers)
+
+
+#尝试存储用户姓名
+import json
+
+username=input("What is your name?")
+
+filename="username.json"
+with open(filename,"w") as f_obj:
+    json.dump(username,f_obj)
+    print("We will remember you when you come back, "+username+"!")
+
+
+#将两个程序结合一下
+filename="username.json"
+try:
+    with open(filename) as f_obj:
+        username=json.load(f_obj)
+except FileNotFoundError:
+    username = input("What is your name?")
+    with open(filename, "w") as f_obj:
+        json.dump(username, f_obj)
+        print("We will remember you when you come back " + username + "!")
+else:
+    print("Welcome back,"+username+"!")
+
+测试：
+class TestAnonymousSurvey(unittest.TestCase):
+    """测试AnonymousSurvey"""
+
+    def setUp(self):
+        """一个对象和一组答案"""
+        question = "What language did you first learn to speak?"
+        self.my_survey = AnonymousSurvey(question)
+        self.responses=["English","Chinese","spanish"]
+    
+    def test_store_single_response(self):
+        """测试单个答案存储"""
+        self.my_survey.store_response(self.responses[0])
+        self.assertIn(self.responses[0],self.my_survey.responses)
+
+if __name__=='__main__':
+    unittest.main()
+
+
+3.学习了kaggle上的pandas课程，做完了前两个的练习。之前因为翻译不通就一直丢在那里没看，今天又重新拾起来学了，发现还挺有意思，打算下周能把pandas的课程完成。
+
+总结：
+这一周的重心全部放在了python的学习上面，主要想早点能把python基础打下来，趁早能够进到下一阶段的学习。
+除了python，赶在周末又将pandas的课程开了一个还可以的头。
+这一周效率还是可以的，除了搞数分 解析几何其他的时间都用来学python，数分太难了！！！！
+
+问题与疑惑：
+1.不知道现在自己的python基础已经够用了没，不谈熟练度如何，首先自己python已经将列表，元组，字典，if，while，函数，类和对象，文件和异常，测试函数这些东西都用书或者b站学了一遍，接下来不知道还有啥可以补充的
+2.除了python和pandas之外，还是有点不知道学啥，希望冯佬可以给我提点稍微具体的建议接下来可以学习点啥东西，虽然之前的计划上有一些，但还是感觉有些摸不着头脑。
