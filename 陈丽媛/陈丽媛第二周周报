@@ -1,0 +1,175 @@
+#陈丽媛第二周周报
+
+#工作总结
+
+继续学习Kaggle和Python
+
+#Python
+
+#if判断
+
+myWeight=70.5
+yourWeight=81.3
+if myWeight<yourWeight:
+    print("You are heavier than me.")
+
+myScore = 50
+if myScore < 60:
+    print("挂科了")
+    print(f"你的分数是{myScore}")
+
+todayDate = 20210121
+if todayDate == 20210121:
+    print("昨天是2021年1月20日")
+    print("今天是2021年1月21日")
+    print("明天是2021年1月22日")
+
+tonyAge = 12
+kevinAge = 11
+if tonyAge > kevinAge:
+    print("Tony")
+if tonyAge < kevinAge:
+    print("Kevin")
+
+price=500
+balance=600
+if balance >= price:
+    print("yes")
+if balance < price:
+    print("no")
+
+drumStick=10
+if drumStick>5:
+    print("yes")
+if drumStick<=5:
+    print("no")
+print(f"今天吃了{drumStick}个鸡腿")
+
+iphone12 = 7299
+iphone12Color = "红色"
+xiaomi10 = 3699
+xiaomi10Color = "白色"
+if (iphone12Color == "白色") and (iphone12 <= 6000):
+    print("可以购买iphone12")
+if (xiaomi10 <= 6000) and (xiaomi10Color == "白色"):
+    print("可以购买xiaomi10")
+
+
+
+#if-else
+
+myHeight=171
+yourHeight =181
+if myHeight<yourHeight:
+    print("I am shorter than you")
+else:
+    print("I am not shorter than you")
+
+a=3
+b=4
+c=5
+if a*a+b*b==c*c:
+    print("这是直角三角形")
+else:
+     print("这不是直角三角形")
+
+weather="晴天"
+if weather=="晴天":
+    print("我们去爬山")
+else:
+    print("我们宅在家")
+
+password=None
+if password=="yequ":
+    print("欢迎来到夜曲")
+else:
+    print("密码不正确")
+
+n=786
+if n%2==0:
+    print("n为偶数")
+else:
+    print("n为奇数")
+
+bid = 200
+price = 300
+profit = price * 8 - bid * 10
+if profit >= 0:
+    print("回本了")
+else:
+    print("没有回本")
+
+  #if-elif-else
+
+cityPopulation=10
+if cityPopulation<=5:
+    print("small city")
+elif cityPopulation>5 and cityPopulation<=40:
+    print("middle city")
+else:
+    print("big city")
+
+results=76
+if 90<=results<=100:
+    print("A")
+elif 80<=results<90:
+    print("B")
+elif 60<=results<80:
+    print("C")
+else:
+    print("D")
+
+myWeight = 80
+myHeight = 1.8
+BMI = myWeight/(myHeight*myHeight)
+if BMI < 18.5:
+    print("under weight")
+elif BMI < 23.9:
+    print("normal weight")
+elif BMI < 27:
+    print("over weight")
+elif BMI <32:
+    print("fat")
+else:
+    print("obese")
+
+#嵌套语句
+
+num=98
+if 0<num<100:
+    if num%2==0:
+        print("偶数")
+
+num=23
+if num>0:
+    print("num大于0")
+    if num%2==0:
+        print("num是偶数")
+    else:
+        print("num是奇数")
+else:
+    print("num小于等于0")
+
+skill = 110
+click = 1
+
+if skill >= 100:
+    print("大招准备就绪")
+    if click == 1:
+        print("大招已发送")
+    else:
+        print("大招未发送")
+
+a = 135;b = 98;c = 129
+number = max(a*b,b*c,c*a)
+print(number)
+
+  #Kaggle
+
+  继续和Pandas死磕到底
+
+  #数学学渣感觉要花好多时间在高代和数分，我努力抽出时间学Python和kaggle
+   我看好多人有读书，我该读点什么
+
+
+  #下周接着学Python和kaggle
