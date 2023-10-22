@@ -1,0 +1,36 @@
+字符串格式化
+python不同类型占位
+格式化的精度控制
+字符串格式化方法*2
+对表达式格式化
+数据输入input（）
+
+下面是部分练习题：
+1
+# 钱包初始余额为50元
+money = 50
+print("当前钱包余额为50元")
+money = money-10
+print("购买了冰淇凌，花费了10元")
+money = money-5
+print("购买了可乐，花费了5元")
+print("最终钱包剩余：",money,"元")
+
+
+
+2
+name = "传智播客"
+stock_price = 19.99
+stock_coded = "003032"
+stock_price_daily_growth_factor = 1.2
+growth_days = 7
+stock = 0
+stock = stock_price * (stock_price_daily_growth_factor**growth_days)
+print(f"公司：{name},股票代码:{stock_coded},当前股价：{stock_price}")
+print("每日增长系数是：%.1"
+      "f,经过%d天的增长后，股价达到了：%.2f"%(stock_price_daily_growth_factor,growth_days,stock))
+
+3
+user_name = input("请输入您的用户名称")
+user_type = input("请输入您的用户类型")
+print("您好，%s，您是尊贵的：%s用户，欢迎您的光临。" %(user_name,user_type) )
