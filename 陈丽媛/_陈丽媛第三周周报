@@ -1,0 +1,47 @@
+#工作总结
+
+#学习Pyhon
+
+#储存多个数据元组
+ 数据结构
+#列表
+ 索引，切片，追加，插入，删除
+#字典
+ 字典的添加与修改
+#for循环
+ 累加
+#while循环
+ 条件循环，死循环，跳出循环，嵌套循环
+#函数
+ 定义函数，调用函数，设参，形参与实参
+
+#阅读了《Python神经网络编程》
+ 了解人工神经网络是一种模拟生物神经系统的计算模型，还有Python下的基本库，神经网络的基本组成部分
+
+#那八道题对我而言属实是有点难了，花了很长时间才做了一道
+
+def can_form_palindrome(word):
+    # 在此处编写你的代码
+    dir={}
+    for i in word:
+        if i in dir:
+            dir[i]+=1
+        else:
+            dir[i]=1
+
+    odd_n=0
+    for i in dir:
+        if dir[i]%2!=0:
+            odd_n+=1
+        else:
+            continue
+
+    if odd_n<=1:
+        return True
+    else:
+        return False      
+
+# 从用户处获取输入
+word = input()
+# 调用函数
+print(can_form_palindrome(word))
