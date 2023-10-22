@@ -1,5 +1,5 @@
 刚接触kaggle，最近学院考试比较麻烦，电脑学的较少
-python题1
+python题1（有些思路是参考的）
 #include <iostream>
 #include <unordered_map>
 
