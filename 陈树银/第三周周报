@@ -1,1 +1,44 @@
 刚接触kaggle，最近学院考试比较麻烦，电脑学的较少
+python题1
+#include <iostream>
+#include <unordered_map>
+
+bool can_form_palindrome(const std::string& word) {
+    std::unordered_map<char, int> charCount;
+
+    // 统计每个字符的出现次数
+    for (char ch : word) {
+        charCount[ch]++;
+    }
+
+    int oddCount = 0; // 记录出现奇数次的字符数量
+
+    // 检查每个字符的出现次数
+    for (const auto& pair : charCount) {
+        if (pair.second % 2 != 0) {
+            oddCount++;
+            // 如果奇数次字符的数量大于1，无法形成回文，返回false
+            if (oddCount > 1) {
+                return false;
+            }
+        }
+    }
+
+    // 最多只能有一个字符的出现次数是奇数，可以形成回文，返回true
+    return true;
+}
+
+int main() {
+    std::string word;
+    std::cout << "请输入一个单词：";
+    std::cin >> word;
+
+    if (can_form_palindrome(word)) {
+        std::cout << "单词 '" << word << "' 可以重新排列成回文。" << std::endl;
+    }
+    else {
+        std::cout << "单词 '" << word << "' 无法重新排列成回文。" << std::endl;
+    }
+
+    return 0;
+}
