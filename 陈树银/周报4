@@ -1,0 +1,73 @@
+判断是否为回文
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+bool isPalindrome(const string& str) {
+    int left = 0;
+    int right = str.length() - 1;
+
+    while (left < right) {
+        if (str[left] != str[right]) {
+            return false;
+        }
+        left++;
+        right--;
+    }
+
+    return true;
+}
+
+int main() {
+    string input;
+    cout << "请输入字符串：";
+    cin >> input;
+
+    if (isPalindrome(input)) {
+        cout << "是回文字符串" << endl;
+    } else {
+        cout << "不是回文字符串" << endl;
+    }
+
+    return 0;
+}
+对读入的n个数排序
+#include <iostream>
+
+using namespace std;
+
+void selectionSort(int arr[], int n) {
+    for (int i = 0; i < n - 1; ++i) {
+        int minIndex = i;
+        for (int j = i + 1; j < n; ++j) {
+            if (arr[j] < arr[minIndex]) {
+                minIndex = j;
+            }
+        }
+        // 交换找到的最小值和当前位置的元素
+        swap(arr[i], arr[minIndex]);
+    }
+}
+
+int main() {
+    int n;
+    cout << "请输入要排序的数的个数：";
+    cin >> n;
+
+    int arr[n];
+    cout << "请输入" << n << "个数：" << endl;
+    for (int i = 0; i < n; ++i) {
+        cin >> arr[i];
+    }
+
+    selectionSort(arr, n);
+
+    cout << "从小到大排序后的结果：" << endl;
+    for (int i = 0; i < n; ++i) {
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
