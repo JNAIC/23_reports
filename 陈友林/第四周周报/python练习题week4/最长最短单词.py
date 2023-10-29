@@ -1,0 +1,8 @@
+s1 = input()
+s2 = s1.replace(",", " ")
+s3 = s2.replace(".", " ")
+list1 = s3.split()
+Max = max(list1, key=len)
+Min = min(list1, key=len)
+print(Max)
+print(Min)
