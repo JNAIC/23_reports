@@ -1,0 +1,109 @@
+判断语句：布尔类型&比较运算符
+if/if else/if elif else语句+嵌套
+while语句+嵌套
+制表符\t 
+不换行输出 print（   ，end=''）
+
+下面是做的一些练习
+
+
+1
+import random
+num = random.randint(1,10)
+guess1 = int(input("来猜猜我心的的数字"))
+if guess1 == num:
+    print("恭喜你猜对啦")
+elif guess1 > num:
+    print("大了，再猜一次")
+    guess2 = int(input())
+
+    if guess2 == num:
+        print("恭喜你猜对啦")
+    elif guess2 > num:
+        print("大了，再猜最后一次")
+        guess3 = int(input())
+
+        if guess3 == num:
+            print("恭喜你猜对啦")
+        elif guess3 > num:
+            print(f"大了，我想的数字是{num}")
+        else:
+            print(f"小了，我想的数字是{num}")
+
+    else:
+        print("小了，再猜最后一次")
+        guess3 = int(input())
+
+        if guess3 == num:
+            print("恭喜你猜对啦")
+        elif guess3 > num:
+            print(f"大了，我想的数字是{num}")
+        else:
+            print(f"小了，我想的数字是{num}")
+
+else:
+    print("小了，再猜一次")
+    guess2 = int(input())
+
+
+    if guess2 == num:
+        print("恭喜你猜对啦")
+    elif guess2 > num:
+        print("大了，再猜最后一次")
+        guess3 = int(input())
+
+        if guess3 == num:
+            print("恭喜你猜对啦")
+        elif guess3 > num:
+            print(f"大了，我想的数字是{num}")
+        else:
+            print(f"小了，我想的数字是{num}")
+
+    else:
+        print("小了，再猜最后一次")
+        guess3 = int(input())
+
+        if guess3 == num:
+            print("恭喜你猜对啦")
+        elif guess3 > num:
+            print(f"大了，我想的数字是{num}")
+        else:
+            print(f"小了，我想的数字是{num}")
+
+
+
+2
+import random
+num = random.randint(1,100)
+
+i = 0
+flag = True
+while flag:
+    guess = int(input("请输入你猜的数字"))
+    i += 1
+    if guess == num:
+        print("你猜对了")
+        flag = False
+    else:
+        if guess > num:
+            print("你猜大了，请再猜一次")
+
+        else:
+            print("你猜小了，再猜一次")
+
+
+print(f"你一共猜了{i}次")
+
+
+
+3
+i = 1
+while i <= 9:
+    j = 1
+    while i > j:
+
+        print(f"{j}*{i}={i*j}\t",end='')
+        j += 1
+    print(f"{j}*{i}={i*j}\t")
+    i += 1
+
