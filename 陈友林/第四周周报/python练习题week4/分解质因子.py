@@ -1,7 +1,10 @@
+import math
+
+
 def separate(x):
     i = 2
     a = []
-    while i <= 3:
+    while i <= math.sqrt(x):
         if x % i == 0:
             x /= i
             k = str(i)
@@ -9,12 +12,9 @@ def separate(x):
             continue
         else:
             i += 1
-    if x == 1:
-        return ' '.join(a)
-    else:
-        k = str(int(x))
-        a.append(k)
-        return ' '.join(a)
+    k = str(int(x))
+    a.append(k)
+    return ' '.join(a)
 
 
 n = int(input())
