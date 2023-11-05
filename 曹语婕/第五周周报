@@ -5,6 +5,11 @@ for循环得到变量作用域
   for循环的中断break continue
 
 
+
+我下周开始估计会开始看那个神经网络相关的东西了吧
+maybe >_<
+
+
   下面是一些练习题：
   for x in range(1,10):
     for y in range(1,(x+1)):
