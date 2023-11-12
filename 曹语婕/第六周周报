@@ -1,0 +1,21 @@
+这周好忙 然后又碰上这个任务 这对我幼小的心灵是一种多么大的伤害啊
+在准备期中考试 所以学这个的进度慢了点（对不起>-<）
+
+因为例会的时候 所讲的东西 我不是太理解 所以先回顾复习了一下流程和一些简单的实现原理
+
+线性回归
+用大量的训练集去算法建模，建立模型，得到所需线性方程
+https://img-blog.csdnimg.cn/7569473bc5fb410e9a91075122c36f2a.png
+不断更新优化参数，使误差最小，即代价函数最小
+https://img-blog.csdnimg.cn/fe1924da2e3540bb868048d24f14f9d6.png
+优化更新参数的方式————梯度下降法
+初始化参数之后，改变更新参数
+https://img-blog.csdnimg.cn/ebaa8aad04174e0d92c1ac8d29c2ebdf.png
+https://img-blog.csdnimg.cn/ef17ab323a20487693f83ab127c35471.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAU2Vhc29ucyBpbiB0aGUgc25vdw==,size_8,color_FFFFFF,t_70,g_se,x_16
+最终输出结果为目标截距、目标斜率，代价函数值列表。
+最后调用函数，绘图
+
+
+
+哎呀愁死我了
+你等我考完期中考再琢磨琢磨。。。
