@@ -1,0 +1,4 @@
+寒假几乎没有学习，玩了sovits,bertvits,gptsovits三个项目，对三个项目所用到的技术有了了解，
+由于bertvits的readme等于没写,为了使用这个项目，在看它代码过程中学习了一些python的包，argprase,gradio_client等中的部分功能
+以及bertvits似乎不能处理显存碎片化的问题，于是学习了colab云端训练
+学习了简单sklearn，能简单使用
